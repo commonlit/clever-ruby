@@ -14,4 +14,3 @@ Name | Type | Description | Notes
 **students** | **Array&lt;String&gt;** |  | [optional] 
 **type** | **String** |  | [optional] 
 
-

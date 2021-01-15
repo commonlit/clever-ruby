@@ -1,7 +1,8 @@
-# Clever::Credentials
+# SwaggerClient::Link
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**district_username** | **String** |  | [optional] 
+**rel** | **String** |  | [optional] 
+**uri** | **String** |  | [optional] 
 

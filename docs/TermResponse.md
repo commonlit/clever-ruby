@@ -5,4 +5,3 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**Term**](Term.md) |  | [optional] 
 
-

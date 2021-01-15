@@ -20,4 +20,3 @@ Name | Type | Description | Notes
 **sis_id** | **String** |  | [optional] 
 **state_id** | **String** |  | [optional] 
 
-

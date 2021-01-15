@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **data** | [**DistrictAdminObject**](DistrictAdminObject.md) |  | [optional] 
 **previous_attributes** | **Object** |  | [optional] 
 
-

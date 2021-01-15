@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **type** | **String** |  | 
 **data** | [**TermObject**](TermObject.md) |  | [optional] 
 
-

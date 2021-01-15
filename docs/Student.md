@@ -30,4 +30,3 @@ Name | Type | Description | Notes
 **unweighted_gpa** | **String** |  | [optional] 
 **weighted_gpa** | **String** |  | [optional] 
 
-

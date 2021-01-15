@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **data** | [**ContactObject**](ContactObject.md) |  | [optional] 
 **previous_attributes** | **Object** |  | [optional] 
 
-

@@ -7,4 +7,3 @@ Name | Type | Description | Notes
 **last** | **String** |  | [optional] 
 **middle** | **String** |  | [optional] 
 
-

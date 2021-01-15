@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **data** | [**SchoolObject**](SchoolObject.md) |  | [optional] 
 **previous_attributes** | **Object** |  | [optional] 
 
-

@@ -56,7 +56,6 @@ Method | HTTP request | Description
 [**get_term_for_section**](DataApi.md#get_term_for_section) | **GET** /sections/{id}/term | 
 [**get_terms**](DataApi.md#get_terms) | **GET** /terms | 
 
-
 # **get_contact**
 > ContactResponse get_contact(id)
 
@@ -75,7 +74,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -126,7 +124,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -184,9 +181,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -243,7 +238,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -294,7 +288,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -345,7 +338,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -403,7 +395,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -454,7 +445,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -505,7 +495,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -563,7 +552,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -614,7 +602,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -665,7 +652,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -716,7 +702,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -767,7 +752,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -818,7 +802,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -869,7 +852,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -920,7 +902,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -971,7 +952,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1022,7 +1002,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   count: 'count_example' # String | 
 }
@@ -1074,7 +1053,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1125,7 +1103,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1176,7 +1153,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1234,7 +1210,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1285,7 +1260,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1336,7 +1310,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1387,7 +1360,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1445,9 +1417,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1504,9 +1474,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1563,9 +1531,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1622,7 +1588,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1673,7 +1638,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1731,9 +1695,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1790,9 +1752,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1849,9 +1809,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1908,9 +1866,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1967,9 +1923,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2026,7 +1980,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2077,7 +2030,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2135,9 +2087,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2194,9 +2144,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2253,9 +2201,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2312,9 +2258,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2371,7 +2315,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2422,7 +2365,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2473,7 +2415,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2531,9 +2472,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2590,9 +2529,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2649,9 +2586,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2708,7 +2643,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2759,7 +2693,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2810,7 +2743,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 

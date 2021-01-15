@@ -1,7 +1,8 @@
-# Clever::Credentials
+# SwaggerClient::AdminName
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**district_username** | **String** |  | [optional] 
+**first** | **String** |  | [optional] 
+**last** | **String** |  | [optional] 
 

@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **start_date** | **String** |  | [optional] 
 
-

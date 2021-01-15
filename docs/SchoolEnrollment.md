@@ -7,4 +7,3 @@ Name | Type | Description | Notes
 **school** | **String** |  | [optional] 
 **start_date** | **String** |  | [optional] 
 
-
