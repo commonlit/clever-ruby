@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.summary     = "Clever API Ruby Gem"
   s.description = "The Clever API"
   s.license     = "Unlicense"
-  s.required_ruby_version = ">= 1.9"
+  s.required_ruby_version = ">= 2.1"
 
   s.add_runtime_dependency 'typhoeus', '~> 1.0', '>= 1.0.1'
   s.add_runtime_dependency 'json', '~> 2.1', '>= 2.1.0'

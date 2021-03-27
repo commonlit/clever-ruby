@@ -273,12 +273,17 @@ module Clever
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
+      if !@dob.nil? && @dob !~ Regexp.new(/(?:[0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/)
+        invalid_properties.push('invalid value for "dob", must conform to the pattern /(?:[0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/.')
+      end
+
       invalid_properties
     end
 
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
+      return false if !@dob.nil? && @dob !~ Regexp.new(/(?:[0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/)
       ell_status_validator = EnumAttributeValidator.new('String', ['Y', 'N', ''])
       return false unless ell_status_validator.valid?(@ell_status)
       gender_validator = EnumAttributeValidator.new('String', ['M', 'F', 'X', ''])
@@ -292,6 +297,16 @@ module Clever
       race_validator = EnumAttributeValidator.new('String', ['Caucasian', 'Asian', 'Black or African American', 'American Indian', 'Hawaiian or Other Pacific Islander', 'Two or More Races', 'Unknown', ''])
       return false unless race_validator.valid?(@race)
       true
+    end
+
+    # Custom attribute writer method with validation
+    # @param [Object] dob Value to be assigned
+    def dob=(dob)
+      if !dob.nil? && dob !~ Regexp.new(/(?:[0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/)
+        fail ArgumentError, 'invalid value for "dob", must conform to the pattern /(?:[0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/.'
+      end
+
+      @dob = dob
     end
 
     # Custom attribute writer method checking allowed values (enum).
