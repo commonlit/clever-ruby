@@ -1,0 +1,11 @@
+name: dependencies
+
+on: [pull_request]
+
+jobs:
+  bundler-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Bundler Audit
+        uses: commonlit/bundler-audit-action@main
