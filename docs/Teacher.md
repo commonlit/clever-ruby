@@ -18,4 +18,3 @@ Name | Type | Description | Notes
 **teacher_number** | **String** |  | [optional] 
 **title** | **String** |  | [optional] 
 
-

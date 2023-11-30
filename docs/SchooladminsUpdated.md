@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **data** | [**SchoolAdminObject**](SchoolAdminObject.md) |  | [optional] 
 **previous_attributes** | **Object** |  | [optional] 
 
-

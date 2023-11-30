@@ -10,6 +10,7 @@ Swagger Codegen version: 2.3.0-SNAPSHOT
 
 =end
 
+require 'addressable'
 require 'date'
 require 'json'
 require 'logger'

@@ -1,7 +1,7 @@
 .PHONY: all test build run
 SHELL := /bin/bash
 
-all: test build
+all: build test
 
 test:
 	bundle install && bundle exec rake spec

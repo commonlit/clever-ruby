@@ -2,9 +2,8 @@
 
 The current client support v2.0 of the API. For v1.2 please use:
 
-- https://rubygems.org/gems/clever-ruby/versions/1.2.4
-- https://github.com/Clever/clever-ruby/tree/v1.2.4
-
+-   https://rubygems.org/gems/clever-ruby/versions/1.2.4
+-   https://github.com/Clever/clever-ruby/tree/v1.2.4
 
 ## Updating the Library
 
@@ -13,12 +12,12 @@ The current client support v2.0 of the API. For v1.2 please use:
 2. Git clone Clever's swagger-api repo (https://github.com/Clever/swagger-api)
 
 3. Run this command in the swagger-codegen repo
+
 ```
-java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i $PATH_TO_SWAGGER_API_REPO/v2.0-client.yml -l ruby -o $PATH_TO_THIS_REPO --additional-properties gemVersion=$VERSION
+swagger-codegen generate -i $PATH_TO_SWAGGER_API_REPO/v2.1-client.yml -l ruby -o $PATH_TO_THIS_REPO --additional-properties gemVersion=$VERSION
 ```
 
 4. Run `make build` to copy over the override files
-
 
 ## Publishing
 

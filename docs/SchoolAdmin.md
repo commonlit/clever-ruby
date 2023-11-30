@@ -14,4 +14,3 @@ Name | Type | Description | Notes
 **staff_id** | **String** |  | [optional] 
 **title** | **String** |  | [optional] 
 
-

@@ -11,15 +11,17 @@ cp override/models/* lib/clever-ruby/models/
 # Override the parsing library with one that's aware of the inheritence
 cp override/api_client.rb lib/clever-ruby/
 
+# Add Addressable to the gem manifest as a dependency
+sed -i '' "28s/^/  s.add_runtime_dependency 'addressable', '~> 2.3', '>= 2.3.0'\n/" ./clever-ruby.gemspec
+
 # Rename references of SwaggerClient to Clever
 git grep -l 'SwaggerClient' -- './*' ':(exclude)override/override.sh' | xargs sed -i "" 's/SwaggerClient/Clever/g'
 git grep -l 'swagger_client' -- './*' ':(exclude)override/override.sh' | xargs sed -i "" 's/swagger_client/clever-ruby/g'
 
-# The generated tests don't do anything so let's remove them
-rm -r spec/api || true
-rm -r spec/models || true
-rm -r spec/api_client_spec.rb || true
-rm -r spec/configuration_spec.rb || true
+# Swagger makes some broken generated tests so let's remove them
+rm -rf spec/base_object_spec.rb
+rm -rf spec/configuration_spec.rb
+rm -rf spec/models || true
 
 # Add the extension to the readme if it's not already there
 if ! grep -q -i '## Previous Versions' README.md; then

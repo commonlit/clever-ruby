@@ -18,4 +18,3 @@ Name | Type | Description | Notes
 **sis_type** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
 
-

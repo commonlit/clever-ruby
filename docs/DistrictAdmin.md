@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **name** | [**AdminName**](AdminName.md) |  | [optional] 
 **title** | **String** |  | [optional] 
 
-
