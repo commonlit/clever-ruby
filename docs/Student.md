@@ -5,10 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **String** |  | [optional] 
 **credentials** | [**Credentials**](Credentials.md) |  | [optional] 
-**district** | **String** |  | [optional] 
 **dob** | **String** |  | [optional] 
 **ell_status** | **String** |  | [optional] 
-**email** | **String** |  | [optional] 
 **enrollments** | [**Array&lt;SchoolEnrollment&gt;**](SchoolEnrollment.md) |  | [optional] 
 **ext** | **Object** |  | [optional] 
 **gender** | **String** |  | [optional] 
@@ -16,11 +14,10 @@ Name | Type | Description | Notes
 **graduation_year** | **String** |  | [optional] 
 **hispanic_ethnicity** | **String** |  | [optional] 
 **home_language** | **String** |  | [optional] 
-**id** | **String** |  | [optional] 
 **iep_status** | **String** |  | [optional] 
 **last_modified** | **String** |  | [optional] 
+**legacy_id** | **String** |  | [optional] 
 **location** | [**Location**](Location.md) |  | [optional] 
-**name** | [**Name**](Name.md) |  | [optional] 
 **race** | **String** |  | [optional] 
 **school** | **String** |  | [optional] 
 **schools** | **Array&lt;String&gt;** |  | [optional] 
@@ -29,5 +26,4 @@ Name | Type | Description | Notes
 **student_number** | **String** |  | [optional] 
 **unweighted_gpa** | **String** |  | [optional] 
 **weighted_gpa** | **String** |  | [optional] 
-
 

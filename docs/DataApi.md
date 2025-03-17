@@ -1,68 +1,58 @@
 # Clever::DataApi
 
-All URIs are relative to *https://api.clever.com/v2.1*
+All URIs are relative to *https://api.clever.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_contact**](DataApi.md#get_contact) | **GET** /contacts/{id} | 
-[**get_contacts**](DataApi.md#get_contacts) | **GET** /contacts | 
-[**get_contacts_for_student**](DataApi.md#get_contacts_for_student) | **GET** /students/{id}/contacts | 
+[**get_contacts_for_user**](DataApi.md#get_contacts_for_user) | **GET** /users/{id}/mycontacts | 
 [**get_course**](DataApi.md#get_course) | **GET** /courses/{id} | 
 [**get_course_for_section**](DataApi.md#get_course_for_section) | **GET** /sections/{id}/course | 
 [**get_courses**](DataApi.md#get_courses) | **GET** /courses | 
+[**get_courses_for_resource**](DataApi.md#get_courses_for_resource) | **GET** /resources/{id}/courses | 
+[**get_courses_for_school**](DataApi.md#get_courses_for_school) | **GET** /schools/{id}/courses | 
 [**get_district**](DataApi.md#get_district) | **GET** /districts/{id} | 
-[**get_district_admin**](DataApi.md#get_district_admin) | **GET** /district_admins/{id} | 
-[**get_district_admins**](DataApi.md#get_district_admins) | **GET** /district_admins | 
-[**get_district_for_contact**](DataApi.md#get_district_for_contact) | **GET** /contacts/{id}/district | 
 [**get_district_for_course**](DataApi.md#get_district_for_course) | **GET** /courses/{id}/district | 
-[**get_district_for_district_admin**](DataApi.md#get_district_for_district_admin) | **GET** /district_admins/{id}/district | 
 [**get_district_for_school**](DataApi.md#get_district_for_school) | **GET** /schools/{id}/district | 
-[**get_district_for_school_admin**](DataApi.md#get_district_for_school_admin) | **GET** /school_admins/{id}/district | 
 [**get_district_for_section**](DataApi.md#get_district_for_section) | **GET** /sections/{id}/district | 
-[**get_district_for_student**](DataApi.md#get_district_for_student) | **GET** /students/{id}/district | 
-[**get_district_for_teacher**](DataApi.md#get_district_for_teacher) | **GET** /teachers/{id}/district | 
 [**get_district_for_term**](DataApi.md#get_district_for_term) | **GET** /terms/{id}/district | 
+[**get_district_for_user**](DataApi.md#get_district_for_user) | **GET** /users/{id}/district | 
 [**get_districts**](DataApi.md#get_districts) | **GET** /districts | 
+[**get_resource**](DataApi.md#get_resource) | **GET** /resources/{id} | 
+[**get_resources**](DataApi.md#get_resources) | **GET** /resources | 
+[**get_resources_for_course**](DataApi.md#get_resources_for_course) | **GET** /courses/{id}/resources | 
+[**get_resources_for_section**](DataApi.md#get_resources_for_section) | **GET** /sections/{id}/resources | 
+[**get_resources_for_user**](DataApi.md#get_resources_for_user) | **GET** /users/{id}/resources | 
 [**get_school**](DataApi.md#get_school) | **GET** /schools/{id} | 
-[**get_school_admin**](DataApi.md#get_school_admin) | **GET** /school_admins/{id} | 
-[**get_school_admins**](DataApi.md#get_school_admins) | **GET** /school_admins | 
 [**get_school_for_section**](DataApi.md#get_school_for_section) | **GET** /sections/{id}/school | 
-[**get_school_for_student**](DataApi.md#get_school_for_student) | **GET** /students/{id}/school | 
-[**get_school_for_teacher**](DataApi.md#get_school_for_teacher) | **GET** /teachers/{id}/school | 
 [**get_schools**](DataApi.md#get_schools) | **GET** /schools | 
-[**get_schools_for_school_admin**](DataApi.md#get_schools_for_school_admin) | **GET** /school_admins/{id}/schools | 
-[**get_schools_for_student**](DataApi.md#get_schools_for_student) | **GET** /students/{id}/schools | 
-[**get_schools_for_teacher**](DataApi.md#get_schools_for_teacher) | **GET** /teachers/{id}/schools | 
+[**get_schools_for_course**](DataApi.md#get_schools_for_course) | **GET** /courses/{id}/schools | 
+[**get_schools_for_term**](DataApi.md#get_schools_for_term) | **GET** /terms/{id}/schools | 
+[**get_schools_for_user**](DataApi.md#get_schools_for_user) | **GET** /users/{id}/schools | 
 [**get_section**](DataApi.md#get_section) | **GET** /sections/{id} | 
 [**get_sections**](DataApi.md#get_sections) | **GET** /sections | 
 [**get_sections_for_course**](DataApi.md#get_sections_for_course) | **GET** /courses/{id}/sections | 
+[**get_sections_for_resource**](DataApi.md#get_sections_for_resource) | **GET** /resources/{id}/sections | 
 [**get_sections_for_school**](DataApi.md#get_sections_for_school) | **GET** /schools/{id}/sections | 
-[**get_sections_for_student**](DataApi.md#get_sections_for_student) | **GET** /students/{id}/sections | 
-[**get_sections_for_teacher**](DataApi.md#get_sections_for_teacher) | **GET** /teachers/{id}/sections | 
 [**get_sections_for_term**](DataApi.md#get_sections_for_term) | **GET** /terms/{id}/sections | 
-[**get_student**](DataApi.md#get_student) | **GET** /students/{id} | 
-[**get_students**](DataApi.md#get_students) | **GET** /students | 
-[**get_students_for_contact**](DataApi.md#get_students_for_contact) | **GET** /contacts/{id}/students | 
-[**get_students_for_school**](DataApi.md#get_students_for_school) | **GET** /schools/{id}/students | 
-[**get_students_for_section**](DataApi.md#get_students_for_section) | **GET** /sections/{id}/students | 
-[**get_students_for_teacher**](DataApi.md#get_students_for_teacher) | **GET** /teachers/{id}/students | 
-[**get_teacher**](DataApi.md#get_teacher) | **GET** /teachers/{id} | 
-[**get_teacher_for_section**](DataApi.md#get_teacher_for_section) | **GET** /sections/{id}/teacher | 
-[**get_teachers**](DataApi.md#get_teachers) | **GET** /teachers | 
-[**get_teachers_for_school**](DataApi.md#get_teachers_for_school) | **GET** /schools/{id}/teachers | 
-[**get_teachers_for_section**](DataApi.md#get_teachers_for_section) | **GET** /sections/{id}/teachers | 
-[**get_teachers_for_student**](DataApi.md#get_teachers_for_student) | **GET** /students/{id}/teachers | 
+[**get_sections_for_user**](DataApi.md#get_sections_for_user) | **GET** /users/{id}/sections | 
+[**get_students_for_user**](DataApi.md#get_students_for_user) | **GET** /users/{id}/mystudents | 
+[**get_teachers_for_user**](DataApi.md#get_teachers_for_user) | **GET** /users/{id}/myteachers | 
 [**get_term**](DataApi.md#get_term) | **GET** /terms/{id} | 
 [**get_term_for_section**](DataApi.md#get_term_for_section) | **GET** /sections/{id}/term | 
 [**get_terms**](DataApi.md#get_terms) | **GET** /terms | 
+[**get_terms_for_school**](DataApi.md#get_terms_for_school) | **GET** /schools/{id}/terms | 
+[**get_user**](DataApi.md#get_user) | **GET** /users/{id} | 
+[**get_users**](DataApi.md#get_users) | **GET** /users | 
+[**get_users_for_resource**](DataApi.md#get_users_for_resource) | **GET** /resources/{id}/users | 
+[**get_users_for_school**](DataApi.md#get_users_for_school) | **GET** /schools/{id}/users | 
+[**get_users_for_section**](DataApi.md#get_users_for_section) | **GET** /sections/{id}/users | 
+
+# **get_contacts_for_user**
+> UsersResponse get_contacts_for_user(id, opts)
 
 
-# **get_contact**
-> ContactResponse get_contact(id)
 
-
-
-Returns a specific student contact
+Returns the contact users for a student user
 
 ### Example
 ```ruby
@@ -75,118 +65,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_contact(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_contact: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**ContactResponse**](ContactResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_contacts**
-> ContactsResponse get_contacts(opts)
-
-
-
-Returns a list of student contacts
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example', # String | 
-  count: 'count_example' # String | 
-}
-
-begin
-  result = api_instance.get_contacts(opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_contacts: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
- **count** | **String**|  | [optional] 
-
-### Return type
-
-[**ContactsResponse**](ContactsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_contacts_for_student**
-> ContactsResponse get_contacts_for_student(id, opts)
-
-
-
-Returns the contacts for a student
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -194,10 +73,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_contacts_for_student(id, opts)
+  result = api_instance.get_contacts_for_user(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_contacts_for_student: #{e}"
+  puts "Exception when calling DataApi->get_contacts_for_user: #{e}"
 end
 ```
 
@@ -212,7 +91,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactsResponse**](ContactsResponse.md)
+[**UsersResponse**](UsersResponse.md)
 
 ### Authorization
 
@@ -243,7 +122,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -294,7 +172,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -345,7 +222,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -385,6 +261,120 @@ Name | Type | Description  | Notes
 
 
 
+# **get_courses_for_resource**
+> CoursesResponse get_courses_for_resource(id, opts)
+
+
+
+Returns the courses for a resource
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_courses_for_resource(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_courses_for_resource: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**CoursesResponse**](CoursesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_courses_for_school**
+> CoursesResponse get_courses_for_school(id, opts)
+
+
+
+Returns the courses for a school
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_courses_for_school(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_courses_for_school: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**CoursesResponse**](CoursesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
 # **get_district**
 > DistrictResponse get_district(id)
 
@@ -403,7 +393,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -412,166 +401,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_district: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictResponse**](DistrictResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_admin**
-> DistrictAdminResponse get_district_admin(id)
-
-
-
-Returns a specific district admin
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_admin(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_admin: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictAdminResponse**](DistrictAdminResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_admins**
-> DistrictAdminsResponse get_district_admins(opts)
-
-
-
-Returns a list of district admins
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example', # String | 
-  count: 'count_example' # String | 
-}
-
-begin
-  result = api_instance.get_district_admins(opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_admins: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
- **count** | **String**|  | [optional] 
-
-### Return type
-
-[**DistrictAdminsResponse**](DistrictAdminsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_for_contact**
-> DistrictResponse get_district_for_contact(id)
-
-
-
-Returns the district for a student contact
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_for_contact(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_for_contact: #{e}"
 end
 ```
 
@@ -614,7 +443,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -623,57 +451,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_district_for_course: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictResponse**](DistrictResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_for_district_admin**
-> DistrictResponse get_district_for_district_admin(id)
-
-
-
-Returns the district for a district admin
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_for_district_admin(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_for_district_admin: #{e}"
 end
 ```
 
@@ -716,7 +493,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -725,57 +501,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_district_for_school: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictResponse**](DistrictResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_for_school_admin**
-> DistrictResponse get_district_for_school_admin(id)
-
-
-
-Returns the district for a school admin
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_for_school_admin(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_for_school_admin: #{e}"
 end
 ```
 
@@ -818,7 +543,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -827,108 +551,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_district_for_section: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictResponse**](DistrictResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_for_student**
-> DistrictResponse get_district_for_student(id)
-
-
-
-Returns the district for a student
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_for_student(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_for_student: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**DistrictResponse**](DistrictResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_district_for_teacher**
-> DistrictResponse get_district_for_teacher(id)
-
-
-
-Returns the district for a teacher
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_district_for_teacher(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_district_for_teacher: #{e}"
 end
 ```
 
@@ -971,7 +593,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1004,12 +625,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_districts**
-> DistrictsResponse get_districts(opts)
+# **get_district_for_user**
+> DistrictResponse get_district_for_user(id)
 
 
 
-Returns a list of districts
+Returns the district for a user
 
 ### Example
 ```ruby
@@ -1022,7 +643,56 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
 
+
+begin
+  result = api_instance.get_district_for_user(id)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_district_for_user: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+
+### Return type
+
+[**DistrictResponse**](DistrictResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_districts**
+> DistrictsResponse get_districts(opts)
+
+
+
+Returns a list of districts. In practice this will only return the one district associated with the bearer token
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
 opts = { 
   count: 'count_example' # String | 
 }
@@ -1056,6 +726,282 @@ Name | Type | Description  | Notes
 
 
 
+# **get_resource**
+> ResourceResponse get_resource(id)
+
+
+
+Returns a specific resource
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+
+
+begin
+  result = api_instance.get_resource(id)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_resource: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+
+### Return type
+
+[**ResourceResponse**](ResourceResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_resources**
+> ResourcesResponse get_resources(opts)
+
+
+
+Returns a list of resources
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_resources(opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_resources: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**ResourcesResponse**](ResourcesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_resources_for_course**
+> ResourcesResponse get_resources_for_course(id, opts)
+
+
+
+Returns the resources for a course
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_resources_for_course(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_resources_for_course: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**ResourcesResponse**](ResourcesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_resources_for_section**
+> ResourcesResponse get_resources_for_section(id, opts)
+
+
+
+Returns the resources for a section
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_resources_for_section(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_resources_for_section: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**ResourcesResponse**](ResourcesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_resources_for_user**
+> ResourcesResponse get_resources_for_user(id, opts)
+
+
+
+Returns the resources for a user
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_resources_for_user(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_resources_for_user: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**ResourcesResponse**](ResourcesResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
 # **get_school**
 > SchoolResponse get_school(id)
 
@@ -1074,7 +1020,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1107,115 +1052,6 @@ Name | Type | Description  | Notes
 
 
 
-# **get_school_admin**
-> SchoolAdminResponse get_school_admin(id)
-
-
-
-Returns a specific school admin
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_school_admin(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_school_admin: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**SchoolAdminResponse**](SchoolAdminResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_school_admins**
-> SchoolAdminsResponse get_school_admins(opts)
-
-
-
-Returns a list of school admins
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example', # String | 
-  count: 'count_example' # String | 
-}
-
-begin
-  result = api_instance.get_school_admins(opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_school_admins: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
- **count** | **String**|  | [optional] 
-
-### Return type
-
-[**SchoolAdminsResponse**](SchoolAdminsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
 # **get_school_for_section**
 > SchoolResponse get_school_for_section(id)
 
@@ -1234,7 +1070,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1243,108 +1078,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_school_for_section: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**SchoolResponse**](SchoolResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_school_for_student**
-> SchoolResponse get_school_for_student(id)
-
-
-
-Returns the primary school for a student
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_school_for_student(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_school_for_student: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**SchoolResponse**](SchoolResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_school_for_teacher**
-> SchoolResponse get_school_for_teacher(id)
-
-
-
-Retrieves school info for a teacher.
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_school_for_teacher(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_school_for_teacher: #{e}"
 end
 ```
 
@@ -1387,7 +1120,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1427,12 +1159,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_schools_for_school_admin**
-> SchoolsResponse get_schools_for_school_admin(id, opts)
+# **get_schools_for_course**
+> SchoolsResponse get_schools_for_course(id, opts)
 
 
 
-Returns the schools for a school admin
+Returns the schools for a course
 
 ### Example
 ```ruby
@@ -1445,9 +1177,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1455,10 +1185,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_schools_for_school_admin(id, opts)
+  result = api_instance.get_schools_for_course(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_schools_for_school_admin: #{e}"
+  puts "Exception when calling DataApi->get_schools_for_course: #{e}"
 end
 ```
 
@@ -1486,12 +1216,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_schools_for_student**
-> SchoolsResponse get_schools_for_student(id, opts)
+# **get_schools_for_term**
+> SchoolsResponse get_schools_for_term(id, opts)
 
 
 
-Returns the schools for a student
+Returns the schools for a term
 
 ### Example
 ```ruby
@@ -1504,9 +1234,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1514,10 +1242,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_schools_for_student(id, opts)
+  result = api_instance.get_schools_for_term(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_schools_for_student: #{e}"
+  puts "Exception when calling DataApi->get_schools_for_term: #{e}"
 end
 ```
 
@@ -1545,12 +1273,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_schools_for_teacher**
-> SchoolsResponse get_schools_for_teacher(id, opts)
+# **get_schools_for_user**
+> SchoolsResponse get_schools_for_user(id, opts)
 
 
 
-Returns the schools for a teacher
+Returns the schools for a user
 
 ### Example
 ```ruby
@@ -1563,20 +1291,19 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
+  primary: 'primary_example', # String | 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
   ending_before: 'ending_before_example' # String | 
 }
 
 begin
-  result = api_instance.get_schools_for_teacher(id, opts)
+  result = api_instance.get_schools_for_user(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_schools_for_teacher: #{e}"
+  puts "Exception when calling DataApi->get_schools_for_user: #{e}"
 end
 ```
 
@@ -1585,6 +1312,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
+ **primary** | **String**|  | [optional] 
  **limit** | **Integer**|  | [optional] 
  **starting_after** | **String**|  | [optional] 
  **ending_before** | **String**|  | [optional] 
@@ -1622,7 +1350,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -1673,7 +1400,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1718,7 +1444,7 @@ Name | Type | Description  | Notes
 
 
 
-Returns the sections for a Courses
+Returns the sections for a course
 
 ### Example
 ```ruby
@@ -1731,9 +1457,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1745,6 +1469,63 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_course: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**SectionsResponse**](SectionsResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_sections_for_resource**
+> SectionsResponse get_sections_for_resource(id, opts)
+
+
+
+Returns the sections for a resource
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_sections_for_resource(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_sections_for_resource: #{e}"
 end
 ```
 
@@ -1790,9 +1571,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1804,124 +1583,6 @@ begin
   p result
 rescue Clever::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_school: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**SectionsResponse**](SectionsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_sections_for_student**
-> SectionsResponse get_sections_for_student(id, opts)
-
-
-
-Returns the sections for a student
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_sections_for_student(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_sections_for_student: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**SectionsResponse**](SectionsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_sections_for_teacher**
-> SectionsResponse get_sections_for_teacher(id, opts)
-
-
-
-Returns the sections for a teacher
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_sections_for_teacher(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_sections_for_teacher: #{e}"
 end
 ```
 
@@ -1967,9 +1628,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2008,12 +1667,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_student**
-> StudentResponse get_student(id)
+# **get_sections_for_user**
+> SectionsResponse get_sections_for_user(id, opts)
 
 
 
-Returns a specific student
+Returns the sections for a user
 
 ### Example
 ```ruby
@@ -2026,118 +1685,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_student(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_student: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**StudentResponse**](StudentResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_students**
-> StudentsResponse get_students(opts)
-
-
-
-Returns a list of students
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example', # String | 
-  count: 'count_example' # String | 
-}
-
-begin
-  result = api_instance.get_students(opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_students: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
- **count** | **String**|  | [optional] 
-
-### Return type
-
-[**StudentsResponse**](StudentsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_students_for_contact**
-> StudentsResponse get_students_for_contact(id, opts)
-
-
-
-Returns the students for a student contact
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2145,10 +1693,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_students_for_contact(id, opts)
+  result = api_instance.get_sections_for_user(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_students_for_contact: #{e}"
+  puts "Exception when calling DataApi->get_sections_for_user: #{e}"
 end
 ```
 
@@ -2163,7 +1711,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**StudentsResponse**](StudentsResponse.md)
+[**SectionsResponse**](SectionsResponse.md)
 
 ### Authorization
 
@@ -2176,12 +1724,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_students_for_school**
-> StudentsResponse get_students_for_school(id, opts)
+# **get_students_for_user**
+> UsersResponse get_students_for_user(id, opts)
 
 
 
-Returns the students for a school
+Returns the student users for a teacher or contact user
 
 ### Example
 ```ruby
@@ -2194,9 +1742,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2204,10 +1750,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_students_for_school(id, opts)
+  result = api_instance.get_students_for_user(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_students_for_school: #{e}"
+  puts "Exception when calling DataApi->get_students_for_user: #{e}"
 end
 ```
 
@@ -2222,7 +1768,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**StudentsResponse**](StudentsResponse.md)
+[**UsersResponse**](UsersResponse.md)
 
 ### Authorization
 
@@ -2235,12 +1781,12 @@ Name | Type | Description  | Notes
 
 
 
-# **get_students_for_section**
-> StudentsResponse get_students_for_section(id, opts)
+# **get_teachers_for_user**
+> UsersResponse get_teachers_for_user(id, opts)
 
 
 
-Returns the students for a section
+Returns the teacher users for a student user
 
 ### Example
 ```ruby
@@ -2253,9 +1799,7 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2263,10 +1807,10 @@ opts = {
 }
 
 begin
-  result = api_instance.get_students_for_section(id, opts)
+  result = api_instance.get_teachers_for_user(id, opts)
   p result
 rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_students_for_section: #{e}"
+  puts "Exception when calling DataApi->get_teachers_for_user: #{e}"
 end
 ```
 
@@ -2281,403 +1825,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**StudentsResponse**](StudentsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_students_for_teacher**
-> StudentsResponse get_students_for_teacher(id, opts)
-
-
-
-Returns the students for a teacher
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_students_for_teacher(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_students_for_teacher: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**StudentsResponse**](StudentsResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teacher**
-> TeacherResponse get_teacher(id)
-
-
-
-Returns a specific teacher
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_teacher(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teacher: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**TeacherResponse**](TeacherResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teacher_for_section**
-> TeacherResponse get_teacher_for_section(id)
-
-
-
-Returns the primary teacher for a section
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.get_teacher_for_section(id)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teacher_for_section: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**TeacherResponse**](TeacherResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teachers**
-> TeachersResponse get_teachers(opts)
-
-
-
-Returns a list of teachers
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example', # String | 
-  count: 'count_example' # String | 
-}
-
-begin
-  result = api_instance.get_teachers(opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teachers: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
- **count** | **String**|  | [optional] 
-
-### Return type
-
-[**TeachersResponse**](TeachersResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teachers_for_school**
-> TeachersResponse get_teachers_for_school(id, opts)
-
-
-
-Returns the teachers for a school
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_teachers_for_school(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teachers_for_school: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**TeachersResponse**](TeachersResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teachers_for_section**
-> TeachersResponse get_teachers_for_section(id, opts)
-
-
-
-Returns the teachers for a section
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_teachers_for_section(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teachers_for_section: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**TeachersResponse**](TeachersResponse.md)
-
-### Authorization
-
-[oauth](../README.md#oauth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **get_teachers_for_student**
-> TeachersResponse get_teachers_for_student(id, opts)
-
-
-
-Returns the teachers for a student
-
-### Example
-```ruby
-# load the gem
-require 'clever-ruby'
-# setup authorization
-Clever.configure do |config|
-  # Configure OAuth2 access token for authorization: oauth
-  config.access_token = 'YOUR ACCESS TOKEN'
-end
-
-api_instance = Clever::DataApi.new
-
-id = 'id_example' # String | 
-
-opts = { 
-  limit: 56, # Integer | 
-  starting_after: 'starting_after_example', # String | 
-  ending_before: 'ending_before_example' # String | 
-}
-
-begin
-  result = api_instance.get_teachers_for_student(id, opts)
-  p result
-rescue Clever::ApiError => e
-  puts "Exception when calling DataApi->get_teachers_for_student: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **starting_after** | **String**|  | [optional] 
- **ending_before** | **String**|  | [optional] 
-
-### Return type
-
-[**TeachersResponse**](TeachersResponse.md)
+[**UsersResponse**](UsersResponse.md)
 
 ### Authorization
 
@@ -2708,7 +1856,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2759,7 +1906,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 id = 'id_example' # String | 
 
 
@@ -2810,7 +1956,6 @@ Clever.configure do |config|
 end
 
 api_instance = Clever::DataApi.new
-
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -2838,6 +1983,351 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TermsResponse**](TermsResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_terms_for_school**
+> TermsResponse get_terms_for_school(id, opts)
+
+
+
+Returns the terms for a school
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_terms_for_school(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_terms_for_school: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**TermsResponse**](TermsResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_user**
+> UserResponse get_user(id)
+
+
+
+Returns a specific user
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+
+
+begin
+  result = api_instance.get_user(id)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_user: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+
+### Return type
+
+[**UserResponse**](UserResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_users**
+> UsersResponse get_users(opts)
+
+
+
+Returns a list of contact, district admin, staff, student, and/or teacher users
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+opts = { 
+  limit: 56, # Integer | 
+  role: 'role_example', # String | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example', # String | 
+  count: 'count_example' # String | 
+}
+
+begin
+  result = api_instance.get_users(opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_users: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Integer**|  | [optional] 
+ **role** | **String**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+ **count** | **String**|  | [optional] 
+
+### Return type
+
+[**UsersResponse**](UsersResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_users_for_resource**
+> UsersResponse get_users_for_resource(id, opts)
+
+
+
+Returns the student and/or teacher users for a resource
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  role: 'role_example', # String | 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_users_for_resource(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_users_for_resource: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **role** | **String**|  | [optional] 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**UsersResponse**](UsersResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_users_for_school**
+> UsersResponse get_users_for_school(id, opts)
+
+
+
+Returns the staff, student, and/or teacher users for a school
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  role: 'role_example', # String | 
+  primary: 'primary_example', # String | 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_users_for_school(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_users_for_school: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **role** | **String**|  | [optional] 
+ **primary** | **String**|  | [optional] 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**UsersResponse**](UsersResponse.md)
+
+### Authorization
+
+[oauth](../README.md#oauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_users_for_section**
+> UsersResponse get_users_for_section(id, opts)
+
+
+
+Returns the student and/or teacher users for a section
+
+### Example
+```ruby
+# load the gem
+require 'clever-ruby'
+# setup authorization
+Clever.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
+api_instance = Clever::DataApi.new
+id = 'id_example' # String | 
+opts = { 
+  role: 'role_example', # String | 
+  limit: 56, # Integer | 
+  starting_after: 'starting_after_example', # String | 
+  ending_before: 'ending_before_example' # String | 
+}
+
+begin
+  result = api_instance.get_users_for_section(id, opts)
+  p result
+rescue Clever::ApiError => e
+  puts "Exception when calling DataApi->get_users_for_section: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | 
+ **role** | **String**|  | [optional] 
+ **limit** | **Integer**|  | [optional] 
+ **starting_after** | **String**|  | [optional] 
+ **ending_before** | **String**|  | [optional] 
+
+### Return type
+
+[**UsersResponse**](UsersResponse.md)
 
 ### Authorization
 

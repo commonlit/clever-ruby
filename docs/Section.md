@@ -21,4 +21,3 @@ Name | Type | Description | Notes
 **teachers** | **Array&lt;String&gt;** |  | [optional] 
 **term_id** | **String** |  | [optional] 
 
-
